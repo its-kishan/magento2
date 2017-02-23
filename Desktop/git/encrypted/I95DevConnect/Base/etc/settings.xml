@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<!--
+//**
+ * I95Dev.com
+ *
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.i95dev.com/LICENSE-M1.txt
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to sub@i95dev.com so we can send you a copy immediately.
+ * PHP version 5
+ *
+ * @category    I95DevConnect
+ * @package     I95DevConnect_Base
+ * @Description Setting
+ * @author      I95Dev <info@i95dev.com>
+ * @copyright   2000-2016 i95Dev
+ * @license     http://store.i95dev.com/LICENSE-M1.txt EULA
+ * @link        http://store.i95dev.com/
+ */
+
+-->
+<I95DevConnect_Base>
+    <!--        <paymentmethods>
+        <Checkmo>
+            <classname>Checkmo</classname>
+        </Checkmo>
+        <Authorizenet>
+            <classname>Authorizenet</classname>
+        </Authorizenet>
+        <Purchaseorder>
+            <classname>Purchaseorder</classname>
+        </Purchaseorder>
+        <Ccsave>
+            <classname>Ccsave</classname>
+        </Ccsave>
+        <Cashondelivery>
+            <classname>Cashondelivery</classname>
+        </Cashondelivery>
+        <Creditlimits>
+            <classname>Creditlimits</classname>
+        </Creditlimits>
+        <Customercredits>
+            <classname>Customercredits</classname>
+        </Customercredits>
+        <Paypal_standard>
+            <classname>PaypalStandard</classname>
+        </Paypal_standard>
+        <Paypal_express>
+            <classname>PaypalExpressCheckout</classname>
+        </Paypal_express>
+        <Paypal_direct>
+            <classname>PaypalDirect</classname>
+        </Paypal_direct>
+        <Paypaluk_express>
+            <classname>PaypalExpressUK</classname>
+        </Paypaluk_express>
+        <Verisign>
+            <classname>PaypalPayflowPro</classname>
+        </Verisign>
+        <M2epropayment>
+            <classname>M2epropayment</classname>
+       </M2epropayment>
+        <Free>
+            <classname>ZeroSubtotalCheckout</classname>
+        </Free>     
+    </paymentmethods>-->
+    <subscriptiondetails>
+        <customerId>a8040e25-50f3-4d4f-948e-558c4cceb7e7</customerId>
+        <subscriptionKey>86dd4685eb72184bd9f0cc0cdf113c19</subscriptionKey>
+    </subscriptiondetails>
+    <generalsetting>
+        <taxoverride>1</taxoverride>
+        <realtimeinventorycheck>1</realtimeinventorycheck>
+        <productstatus>2</productstatus>
+    </generalsetting>
+    <logs>
+        <files>
+            i95devApiException,MagentoToERP,MessageToMagento,subscription,xmlerror,ERPToMagento,i95devException,cleanMQData
+        </files>
+        <maxdays>1</maxdays>
+    </logs>
+    <supportedProductTypes>
+        <Order>simple,productmatrix,giftcard,configurable,grouped,ugiftcert,virtual,downloadable</Order>
+        <Product>simple,productmatrix,giftcard,ugiftcert,virtual,downloadable</Product>
+    </supportedProductTypes>
+</I95DevConnect_Base>

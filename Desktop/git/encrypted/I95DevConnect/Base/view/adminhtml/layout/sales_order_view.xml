@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!--
+//**
+ * I95Dev.com
+ *
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.i95dev.com/LICENSE-M1.txt
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to sub@i95dev.com so we can send you a copy immediately.
+ * PHP version 5
+ *
+ * @category    I95DevConnect
+ * @package     I95DevConnect_Base
+ * @Description Sales_Order_View
+ * @author      I95Dev <info@i95dev.com>
+ * @copyright   2000-2016 i95Dev
+ * @license     http://store.i95dev.com/LICENSE-M1.txt EULA
+ * @link        http://store.i95dev.com/
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="order_info">
+            <action method="setTemplate">
+                <argument name="template" xsi:type="string">I95DevConnect_Base::order/view/info.phtml</argument>
+            </action>
+            <block class="I95DevConnect\Base\Block\Adminhtml\Order\View\Info" name="custom_info"/>
+        </referenceBlock>
+        <referenceContainer name="left">
+            <referenceContainer name="payment_additional_info">
+                <block class="I95DevConnect\Base\Block\Adminhtml\Order\View\Info" name="sales_order_view_ad"
+                       template="order/view/payment.phtml"/>
+            </referenceContainer>
+        </referenceContainer>
+    </body>
+</page>
+
+ 

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+//**
+ * I95Dev.com
+ *
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.i95dev.com/LICENSE-M1.txt
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to sub@i95dev.com so we can send you a copy immediately.
+ * PHP version 5
+ *
+ * @category    I95DevConnect
+ * @package     I95DevConnect_Base
+ * @Description Customer_Listing
+ * @author      I95Dev <info@i95dev.com>
+ * @copyright   2000-2016 i95Dev
+ * @license     http://store.i95dev.com/LICENSE-M1.txt EULA
+ * @link        http://store.i95dev.com/
+ */
+-->
+<listing xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+    <container name="listing_top">
+    </container>
+    <columns name="customer_columns">
+        <column name="target_customer_id" class="I95DevConnect\Base\Ui\Component\Customer\Column\TargetCustomerId">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="editor" xsi:type="string">false</item>
+                    <item name="label" xsi:type="string" translate="true">Target Customer ID</item>
+                    <item name="sortOrder" xsi:type="number">15</item>
+                </item>
+            </argument>
+        </column>
+        <column name="origin" class="I95DevConnect\Base\Ui\Component\Customer\Column\Origin">
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="filter" xsi:type="string">text</item>
+                    <item name="editor" xsi:type="string">false</item>
+                    <item name="label" xsi:type="string" translate="true">Origin</item>
+                    <item name="sortOrder" xsi:type="number">15</item>
+                </item>
+            </argument>
+        </column>
+    </columns>
+</listing>

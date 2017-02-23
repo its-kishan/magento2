@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<!-- 
+/**
+ * I95Dev.com
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.i95dev.com/LICENSE-M1.txt
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to sub@i95dev.com so we can send you a copy immediately.
+ * PHP version 5
+ *
+ * @category    I95DevConnect
+ * @package     I95DevConnect_MessageQueue
+ * @Description WebApi
+ * @author      I95Dev <info@i95dev.com>
+ * @copyright   2000-2016 i95Dev
+ * @license     http://store.i95dev.com/LICENSE-M1.txt EULA
+ * @link        http://store.i95dev.com/
+ */
+-->
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+    <route url="/V1/getCustomer/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCustomer"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createProductsList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createProductsList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createCustomersList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createCustomersList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCustomersList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCustomersList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCustomersInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCustomersInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setCustomersResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setCustomersResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getProductsList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getProductsList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getProductsInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getProductsInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setProductsResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setProductsResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCustomergroupsList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCustomergroupsList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCustomergroupsInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCustomergroupsInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setCustomergroupsResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setCustomergroupsResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createCustomerGroupList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createCustomerGroupList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getOrdersList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getOrdersList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getOrdersInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getOrdersInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setOrdersResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setOrdersResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createOrdersList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createOrdersList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createInvoiceList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createInvoiceList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createShipmentList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createShipmentList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getInvoicesList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getInvoicesList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getInvoicesInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getInvoicesInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setInvoicesResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setInvoicesResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getShipmentsList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getShipmentsList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getShipmentsInfo/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getShipmentsInfo"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setShipmentsResponse/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setShipmentsResponse"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/updateTierPriceList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="updateTierPriceList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/createPriceLevelsList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="createPriceLevelsList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getMessageQueueResponseList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getMessageQueueResponseList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getToken/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getToken"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/setCompleteStatus/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="setCompleteStatus"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getMQMessageList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getMQMessageList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getMQEntityCountList/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getMQEntityCountList"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCreditOrders/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCreditOrders"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getCreditSchedules/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getCreditSchedules"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getFinanceCharges/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getFinanceCharges"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+    <route url="/V1/getTransactionHistory/" method="POST">
+        <service class="I95DevConnect\MessageQueue\Api\I95DevRepositoryInterface" method="getTransactionHistory"/>
+        <resources>
+            <resource ref="I95DevConnect_MessageQueue::apimethods"/>
+        </resources>
+    </route>
+</routes>

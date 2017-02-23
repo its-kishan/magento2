@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<!--
+//**
+ * I95Dev.com
+ *
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the EULA
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://store.i95dev.com/LICENSE-M1.txt
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to sub@i95dev.com so we can send you a copy immediately.
+ * PHP version 5
+ *
+ * @category    I95DevConnect
+ * @package     I95DevConnect_Base
+ * @Description Events
+ * @author      I95Dev <info@i95dev.com>
+ * @copyright   2000-2016 i95Dev
+ * @license     http://store.i95dev.com/LICENSE-M1.txt EULA
+ * @link        http://store.i95dev.com/
+ */
+
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../../../lib/internal/Magento/Framework/Event/etc/events.xsd">
+    <event name="customer_save_after">
+        <observer name="i95dev_customer_save_after" instance="I95DevConnect\Base\Observer\CustomerObserver"/>
+    </event>
+    <event name="catalog_product_save_after">
+        <observer name="i95dev_product_save_after" instance="I95DevConnect\Base\Observer\ProductSaveAfterObserver"/>
+    </event>
+    <event name="catalog_product_save_before">
+        <observer name="i95dev_product_save_before" instance="I95DevConnect\Base\Observer\ProductSaveBeforeObserver"/>
+    </event>
+    <event name="customer_address_save_after">
+        <observer name="i95dev_customer_address_save_after"
+                  instance="I95DevConnect\Base\Observer\AddressCustomerObserver"/>
+    </event>
+    <event name="customer_group_save_after">
+        <observer name="i95dev_customer_group_save_after"
+                  instance="I95DevConnect\Base\Observer\CustomerGroupSaveAfterObserver"/>
+    </event>
+    <event name="sales_quote_save_after">
+        <observer name="i95dev_sales_order_save_after"
+                  instance="I95DevConnect\Base\Observer\SalesOrderSaveAfterObserver"/>
+    </event>
+    <event name="sales_order_invoice_save_after">
+        <observer name="i95dev_sales_order_invoice_save_after"
+                  instance="I95DevConnect\Base\Observer\SalesOrderInvoiceSaveAfterObserver"/>
+    </event>
+    <event name="sales_order_shipment_save_after">
+        <observer name="i95dev_sales_order_shipment_save_after"
+                  instance="I95DevConnect\Base\Observer\SalesOrderShipmentSaveAfterObserver"/>
+    </event>
+    <event name="sales_order_shipment_track_save_after">
+        <observer name="i95dev_sales_order_shipment_track_save_after"
+                  instance="I95DevConnect\Base\Observer\SalesOrderShipmentTrackSaveAfter"/>
+    </event>
+</config>
+ 
