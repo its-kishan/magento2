@@ -1,5 +1,5 @@
 {
-    "name": "i95devconnect/messageQueue",
+    "name": "I95DevConnect/mssageQueue",
     "description": "Messagequeue stores data in i95Dev custom tables",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0"
