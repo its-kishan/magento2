@@ -3,7 +3,7 @@
     "description": "Base connnector syncs data to Magento systems and ERP",
     "require": {
         "php": "~5.5.0|~5.6.0|~7.0.0",
-        "I95DevConnect/MessageQueue":"100.0.*"
+        "I95DevConnect/MessageQueue":"*"
     },
     "type": "magento2-module",
     "version": "100.0.3",
